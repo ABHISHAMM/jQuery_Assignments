@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIV COLOR</title>
+	<style>
+		#container 
+        {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            position: relative;           
+        }
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+    	var div = $("div");  
+        div.animate({left: '1150px'},"slow");
+        //$("div").animate({left: '1150px'},"slow");
+    });
+
+    		
+});
+</script> 
+	
+</head>
+
+<body>
+
+<h2 align="center">Hint : The rectangle move from <font color="blue">Left </font>to <font color="blue">Right </font> of the page..</h2><br>
+<center><button>Click Here</button></center><br><br>
+
+<div id="container"></div>
+
+</body>
+</html>

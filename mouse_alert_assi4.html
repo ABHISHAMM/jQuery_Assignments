@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mouse alert</title>
+	<title>Hide Paragraph</title>
+	<style>
+		p{
+			color: blue;
+			padding-top: 10px;
+			padding-left: 10px;
+			font-size: 22px;
+			font-family: arial;
+			
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+
+		$(document).ready(function()
+		{
+			$("#p1").hover(function()
+			{
+    			alert("You entered paragraph!");
+			},
+			function()
+			{
+    			alert("You now leave paragraph!");
+			});
+    
+		});
+	</script>
+</head>
+
+<body>
+	<p id="p1" align="center"><b>This is a paragraph to check an alert when mouse pointer <font color="red">enters</font> and <font color="red">leaves</font> the paragraph <b></p><br>
+</body>
+</html>

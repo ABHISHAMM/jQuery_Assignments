@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>change the background colour and fontsize</title>
+	<h2>This is a heading</h2>
+	<style>
+		#p1
+		{
+			background-color: red;
+
+		}
+		#p2
+		{
+			background-color: lightgreen;
+		}
+		#p3
+		{
+			background-color: blue;
+		}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+    			$(".btn1").click(function(event) 
+    			{
+    				event.preventDefault();
+    				$("p").css({"font-size": "27px","background":"yellow"});
+        				
+    			});
+    	});
+
+	</script>
+</head>
+
+<body>
+	<p id="p1">This is a paragraph.</p>
+	<p id="p2">This is a paragraph.</p>
+	<p id="p3">This is a paragraph.</p>
+	<p id="p4">This is a paragraph.</p><br>
+	<button class="btn1" style="text-align: center;">Set multiple styles for p</button>
+</body>
+
+</html>

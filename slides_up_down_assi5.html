@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Slides up and down</title>
+	<style>
+		p{
+			color: blue;
+			padding-top: 10px;
+			padding-left: 10px;
+			font-size: 22px;
+			font-family: arial;
+			
+		}
+		button 
+		{
+	    	position: absolute;
+	    	top: 20%;
+	   		left:45%;
+	    		font-style:bold; 
+
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+    		$(".btn1").click(function()
+    		{
+        				$("p").slideUp(1300);
+        				$("p").slideDown(1300);
+    		});
+		});
+		</script>
+</head>
+
+<body>
+		<p align="center"><b>This is a paragraph to the paragraph <font color="red">slides up</font> and <font color="red">slides down</font> after the button is clicked once.<b></p><br>
+		<button class="btn1" style="text-align: center;">Click Here</button>
+</body>
+
+</html>
